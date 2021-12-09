@@ -73,6 +73,7 @@ namespace RPG.Combat {
         public void Cancel () {
             ResetTriggerAttack ();
             target = null;
+            GetComponent<Mover> ().Cancel ();
         } // Cancel
 
     } // Class Fighter
