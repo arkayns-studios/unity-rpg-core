@@ -25,7 +25,7 @@ namespace RPG.Control {
             RaycastHit hit;
             if (Physics.Raycast (GetMouseRay (), out hit)) {
                 if (Input.GetMouseButton (0))
-                    mover.StartMoveAction (hit.point);
+                    mover.StartMoveAction (hit.point, 1f);
                 return true;
             }
             return false;
